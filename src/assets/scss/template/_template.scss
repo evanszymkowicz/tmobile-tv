@@ -1,0 +1,290 @@
+body,
+html,
+.body {
+  background: $light-gray !important;
+}
+
+.header {
+  width: 100%;
+  border-collapse: collapse !important;
+
+  .header-left {
+    font-family: $body-font-family;
+    font-size: 11px;
+    color: $dark-gray;
+  }
+
+  .header-right {
+    font-family: $body-font-family;
+    font-size: 11px;
+    color: $dark-gray;
+    a {
+      text-decoration: none;
+      color: $dark-gray;
+    }
+  }
+}
+
+.hero-image {
+  width: 100%;
+  background-color: $primary-color;
+  border: 0;
+  border-collapse: collapse !important;
+  border-spacing: 0;
+
+  .hero-header {
+    background-color: $primary-color;
+    // display: table;
+    width: 100%;
+
+    .logo {
+      width: 100%;
+      display: table-cell;
+      padding-top: 3px;
+      padding-right: 30px;
+      padding-bottom: 3px;
+      padding-left: 30px;
+
+      a {
+        cursor: pointer;
+
+        img {
+          width: 160px;
+          border: 0;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .hero-bottom {
+    background-color: $primary-color;
+    display: table;
+    width: 100%;
+
+    .hero-img {
+      width: 100%;
+      display: table-cell;
+
+      a {
+        cursor: pointer;
+
+        img {
+          display: block;
+          width: 414px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
+.main-section {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse !important;
+  border-spacing: 0;
+
+  .tv-vision {
+    padding-top: 25px !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+    padding-left: 0 !important;
+
+    img {
+      width: 414px;
+      border: 0;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .button {
+    margin: 0;
+    display: inline-block;
+    width: 190px;
+  }
+
+  .text-area {
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+
+    .text {
+      font-family: $body-font-family;
+      font-size: 16px;
+      line-height: 22px;
+      color: $black;
+      padding-bottom: 18px;
+    }
+
+    .number {
+        padding-top: 18px;
+        padding-bottom: 18px;
+        font-family: $body-font-family;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 auto;
+        font-weight: bold;
+        text-align: center;
+        a {
+          margin: 0 auto;
+          color: $primary-color;
+          text-decoration: underline;
+          font-weight: bold;
+      }
+    }
+
+    .disclaimer {
+      .row {
+        font-family: $body-font-family;
+        font-size: 11px;
+        line-height: 16px;
+        color: $medium-gray;
+        padding-top: 0;
+        padding-right: 20px;
+        padding-bottom: 0;
+        padding-left: 20px;
+      }
+    }
+  }
+}
+
+.offer-section {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse !important;
+  border-spacing: 0;
+
+  img {
+    display: block;
+    border: 0;
+  }
+}
+
+.tvbox-section {
+  width: 100%;
+  // background-color: $primary-color
+  .columns {
+    font-family: $body-font-family;
+    font-size: 16px;
+    line-height: 22px;
+    color: $white;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+.bottom-img-section {
+  width: 100%;
+  background-color: $black;
+  columns {
+    padding-top: 5px;
+    padding-right: 0;
+    padding-bottom: 5px;
+    padding-left: 0;
+    text-align: center;
+    background-color: $black;
+
+    img {
+      display: block;
+      border: 0;
+      width: 414px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.footer {
+  padding-top: 10px;
+  width: 100%;
+  background-color: $third-color;
+  .columns {
+    background-color: $third-color;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    font-family: $body-font-family;
+    font-size: 11px;
+    line-height: 16px;
+    color: $third-color;
+
+    a {
+      color: $primary-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media only screen and (max-width: 596px) {
+  .header-section {
+    .header-left {
+      display: none !important;
+    }
+  }
+
+  .hero-section {
+    .container.hero-header {
+      width: 100% !important;
+      .logo {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+
+        img {
+          width: 130px !important;
+        }
+      }
+    }
+
+    .container.hero-bottom {
+      width: 100% !important;
+      .hero-img {
+        img {
+          width: 100% !important;
+        }
+      }
+    }
+  }
+
+  .row {
+    width: 414px !important;
+  }
+
+  .container.main-section {
+    width: 414px !important;
+
+    .columns.tv-vision {
+      width: 414px !important;
+    }
+
+    .text-area {
+      padding-left: 5% !important;
+      padding-right: 5% !important;
+
+      .text {
+        hyphens: none;
+        word-wrap: normal;
+      }
+    }
+  }
+
+  .container.offer-section {
+    .tvbox-table {
+      columns {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+      }
+    }
+  }
+
+  .container.footer-section {
+    columns {
+      padding-left: 5% !important;
+      padding-right: 5% !important;
+      hyphens: none !important;
+      word-wrap: normal !important;
+    }
+  }
+}
