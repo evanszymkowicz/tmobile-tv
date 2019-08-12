@@ -230,3 +230,13 @@ function zip() {
 
   return merge(moveTasks);
 }
+
+// create a production server (I added this)
+
+gulp.task('serveprod', function() {
+  connect.server({
+    root: [],
+    port: process.env.PORT || 5000, // (localhost: 500)
+    livereload: false
+  });
+});
